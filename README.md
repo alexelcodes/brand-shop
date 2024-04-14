@@ -5,7 +5,7 @@
   <p align="center">
 This project was created as a study project during an internship at Taitotalo.<br />
     <br />
-    <a href="https://brandshop.icu">View website</a>
+    <a href="brandshop.icu">View website</a>
     .
     <a href="#description">Description</a>
     ·
