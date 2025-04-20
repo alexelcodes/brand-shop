@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="https://github.com/kot-alex/brand-shop/blob/main/public/img/favicon/apple-touch-icon.png" alt="logo">
+  <a href="https://brandshop.fun/">
+    <img src="https://raw.githubusercontent.com/kot-alex/brand-shop/main/public/img/favicon/apple-touch-icon.png" alt="logo">
+  </a>
 
 <h3 align="center">Brand Shop</h3>
   <p align="center">
