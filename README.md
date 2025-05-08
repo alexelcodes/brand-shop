@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://brandshop.fun/">
-    <img src="https://raw.githubusercontent.com/kot-alex/brand-shop/main/public/img/favicon/apple-touch-icon.png" alt="logo">
+    <img src="public/img/favicon/apple-touch-icon.png" alt="logo">
   </a>
 
 <h3 align="center">Brand Shop</h3>
@@ -19,7 +19,7 @@ This project was created as a study project during an internship at Taitotalo.<b
     ·
     <a href="#features">Features</a>
     ·
-    <a href="https://github.com/kot-alex/brand-shop/wiki">Wiki</a>
+    <a href="wiki">Wiki</a>
   </p>
 </div>
 
@@ -93,4 +93,4 @@ define('DB_PASS', 'mysql_password');
 
 ### Project Wiki
 
-More information about the project, including its architecture, ER diagram, sitemap, and webpage layouts: [wiki](https://github.com/kot-alex/brand-shop/wiki)
+More information about the project, including its architecture, ER diagram, sitemap, and webpage layouts: [wiki](wiki)
