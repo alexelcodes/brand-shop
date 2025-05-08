@@ -19,7 +19,7 @@ This project was created as a study project during an internship at Taitotalo.<b
     ·
     <a href="#features">Features</a>
     ·
-    <a href="wiki">Wiki</a>
+    <a href="https://github.com/alexelkinx/brand-shop/wiki">Wiki</a>
   </p>
 </div>
 
@@ -93,4 +93,4 @@ define('DB_PASS', 'mysql_password');
 
 ### Project Wiki
 
-More information about the project, including its architecture, ER diagram, sitemap, and webpage layouts: [wiki](wiki)
+More information about the project, including its architecture, ER diagram, sitemap, and webpage layouts: [wiki](https://github.com/alexelkinx/brand-shop/wiki)
