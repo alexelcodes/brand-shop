@@ -1,4 +1,12 @@
 <div align="center">
+<p align="center">
+  <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.0+-blue?logo=php" alt="PHP Badge"></a>
+  <a href="https://httpd.apache.org/"><img src="https://img.shields.io/badge/Apache-2.4+-red?logo=apache" alt="Apache Badge"></a>
+  <a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/MySQL-8.0+-blue?logo=mysql" alt="MySQL Badge"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript" alt="JavaScript Badge"></a>
+  <a href="https://sass-lang.com/"><img src="https://img.shields.io/badge/SCSS-CSS%20Preprocessor-pink?logo=sass" alt="SCSS Badge"></a>
+  <a href="https://jestjs.io/"><img src="https://img.shields.io/badge/Testing-PHPUnit-yellow?logo=testinglibrary" alt="PHPUnit Badge"></a>
+</p>
   <a href="https://brandshop.fun/">
     <img src="public/img/favicon/apple-touch-icon.png" alt="logo">
   </a>
@@ -11,9 +19,9 @@ This project was created as a study project during an internship at Taitotalo.<b
     .
     <a href="#description">Description</a>
     ·
-    <a href="#built-with">Built with</a>
-    ·
-    <a href="#installing">Installing</a>
+    <a href="#tech-stack">Tech Stack</a>
+     ·
+    <a href="#setup">Setup</a>
      ·
     <a href="#testing">Testing</a>
     ·
@@ -27,25 +35,27 @@ This project was created as a study project during an internship at Taitotalo.<b
 
 The Brand Shop is a web-based application that allows users to browse and purchase fashion items online. The system is designed to provide a user-friendly interface that is easy to navigate and provides an intuitive shopping experience. The platform is fully responsive and optimized for different screen sizes.
 
-### Built with
+### Tech Stack
 
-- PHP
-- HTML
-- SCSS
-- JS
-- MySQL
+This project is built using:
 
-It follows the Model-View-Controller (MVC) architecture to separate the presentation logic from the business logic.
+- **PHP 8.0+** – server-side scripting
+- **Apache 2.4+** – HTTP server
+- **MySQL 8.0+** – database
+- **JavaScript (ES6+)**
+- **SCSS (SASS)**
+- **HTML5**
 
-### Installing
+The application follows the Model-View-Controller (MVC) architecture to separate concerns and improve maintainability.
 
-To run the Brand Shop project on your local machine, you need to have the following software installed:
+### Setup
 
-- Apache ver. 2.4 or higher
-- PHP ver. 8.0 or higher
-- MySQL ver. 8.0 or higher
+To run the Brand Shop locally, make sure you have:
 
-#### Steps
+- Apache 2.4 or higher
+- PHP 8.0 or higher
+- MySQL 8.0 or higher
+- Composer (for dependency management)
 
 1. Clone the repository to your local machine:
 
@@ -58,10 +68,10 @@ To run the Brand Shop project on your local machine, you need to have the follow
 4. Import the database from the data-dump.sql file in the project's root/data directory. You can do this by running the following command from the project directory:
 
 ```bash
-   mysql -u mysql_username -pmysql_password database_name < data-dump.sql
+   mysql -u root -p database_name < data-dump.sql
 ```
 
-Replace mysql_username with your MySQL username and database_name with the name of the database you created in step 3. You will be prompted to enter your MySQL password.
+Replace `database_name` with the name of the database you created in step 3. You will be prompted to enter your MySQL password.
 
 5. Configure the database connection settings in the config.php file located in the app directory. Replace the DB_HOST, DB_NAME, DB_USER, and DB_PASS values with your MySQL server details.
 
@@ -72,15 +82,27 @@ define('DB_USER', 'mysql_username');
 define('DB_PASS', 'mysql_password');
 ```
 
-6. Start your local web server and open the project in your web browser by navigating to http://localhost/.
+6. Start your local web server and open the project in your web browser.
+
+   If you placed the project in a subfolder (e.g., `htdocs/brand-shop/`), navigate to:
+
+   http://localhost/brand-shop/
+
+   Adjust the URL depending on your local server setup or custom virtual host configuration.
 
 ### Testing
 
-1. Make sure that Composer is installed on your system by running the command `composer --version`. If Composer is installed, it will output the version, otherwise, you'll need to install it on your system.
-2. Open the CLI and navigate to the folder containing your project, which you cloned from the GitHub repository.
-3. Run the command `composer install` to install all the dependencies listed in the composer.json file, including PHPUnit.
-4. After installing the dependencies, run the command `composer test` to run the tests.
-5. If the tests pass successfully, you'll see a message indicating that the tests passed, otherwise, you'll see error messages indicating the test failures.
+This project uses [PHPUnit](https://phpunit.de/) for automated testing.  
+Tests are located in the `/tests` directory and can be run via Composer.
+
+To run the tests:
+
+```bash
+composer install     # install dev dependencies, including PHPUnit
+composer test        # run all tests with testdox output and color
+```
+
+The script is defined in `composer.json` and uses the `--testdox` and `--colors` options for readable and colorized output.
 
 ### Features
 
@@ -91,6 +113,6 @@ define('DB_PASS', 'mysql_password');
 - **Order history**: users can view their order history and track the status of their orders.
 - **Admin panel**: administrators can log in (username: `admin@admin.com` password: `dVYTRrT7tnkp8BP`) and access the admin panel, where they can manage the product catalog, orders, and users.
 
-### Project Wiki
+### Wiki
 
 More information about the project, including its architecture, ER diagram, sitemap, and webpage layouts: [wiki](https://github.com/alexelkinx/brand-shop/wiki)
