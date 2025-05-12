@@ -1,118 +1,149 @@
-<div align="center">
-<p align="center">
-  <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.0+-blue?logo=php" alt="PHP Badge"></a>
-  <a href="https://httpd.apache.org/"><img src="https://img.shields.io/badge/Apache-2.4+-red?logo=apache" alt="Apache Badge"></a>
-  <a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/MySQL-8.0+-blue?logo=mysql" alt="MySQL Badge"></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript" alt="JavaScript Badge"></a>
-  <a href="https://sass-lang.com/"><img src="https://img.shields.io/badge/SCSS-CSS%20Preprocessor-pink?logo=sass" alt="SCSS Badge"></a>
-  <a href="https://jestjs.io/"><img src="https://img.shields.io/badge/Testing-PHPUnit-yellow?logo=testinglibrary" alt="PHPUnit Badge"></a>
-</p>
-  <a href="https://brandshop.fun/">
-    <img src="public/img/favicon/apple-touch-icon.png" alt="logo">
-  </a>
+<h1 align="center">🛍️ Brand Shop</h1>
 
-<h3 align="center">Brand Shop</h3>
+<div align="center">
   <p align="center">
-This project was created as a study project during an internship at Taitotalo.<br />
-    <br />
-    <a href="https://brandshop.fun">View website</a>
-    .
-    <a href="#description">Description</a>
-    ·
-    <a href="#tech-stack">Tech Stack</a>
-     ·
-    <a href="#setup">Setup</a>
-     ·
-    <a href="#testing">Testing</a>
-    ·
-    <a href="#features">Features</a>
-    ·
-    <a href="https://github.com/alexelkinx/brand-shop/wiki">Wiki</a>
+    <a href="https://www.php.net/"><img src="https://img.shields.io/badge/PHP-8.0+-blue?logo=php" alt="PHP Badge"></a>
+    <a href="https://httpd.apache.org/"><img src="https://img.shields.io/badge/Apache-2.4+-red?logo=apache" alt="Apache Badge"></a>
+    <a href="https://www.mysql.com/"><img src="https://img.shields.io/badge/MySQL-8.0+-blue?logo=mysql" alt="MySQL Badge"></a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript" alt="JavaScript Badge"></a>
+    <a href="https://sass-lang.com/"><img src="https://img.shields.io/badge/SCSS-CSS%20Preprocessor-pink?logo=sass" alt="SCSS Badge"></a>
+    <a href="https://jestjs.io/"><img src="https://img.shields.io/badge/Testing-PHPUnit-yellow?logo=testinglibrary" alt="PHPUnit Badge"></a>
   </p>
+
+  <img src="public/img/favicon/apple-touch-icon.png" alt="Brand Shop logo" height="160">
+
+  <p>
+    A full-stack eCommerce platform built as a study project during an internship at Taitotalo.
+  </p>
+
+  <p align="center">
+    <a href="https://brandshop.fun">
+      <img src="https://img.shields.io/badge/🌐%20Visit-Brand%20Shop-blue?style=flat" alt="Visit Brand Shop" width="160">
+    </a>
+  </p>
+  <a href="#description">Description</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#features">Features</a> •
+  <a href="#setup">Setup</a> •
+  <a href="#testing">Testing</a> •
+  <a href="#design">Design</a>
 </div>
 
-### Description
+---
 
-The Brand Shop is a web-based application that allows users to browse and purchase fashion items online. The system is designed to provide a user-friendly interface that is easy to navigate and provides an intuitive shopping experience. The platform is fully responsive and optimized for different screen sizes.
+## Description
 
-### Tech Stack
+The Brand Shop is a responsive web application that allows users to browse and purchase fashion items online. It is built with a focus on clean architecture, user experience, and functionality. The system implements a clear separation of concerns using the MVC pattern.
 
-This project is built using:
+## Tech Stack
 
-- **PHP 8.0+** – server-side scripting
-- **Apache 2.4+** – HTTP server
-- **MySQL 8.0+** – database
-- **JavaScript (ES6+)**
-- **SCSS (SASS)**
-- **HTML5**
+- **PHP 8.0+** — Backend logic
+- **Apache 2.4+** — Web server
+- **MySQL 8.0+** — Relational database
+- **JavaScript (ES6+)** — Frontend behavior
+- **SCSS (SASS)** — Modular CSS styling
+- **HTML5** — Semantic markup
 
-The application follows the Model-View-Controller (MVC) architecture to separate concerns and improve maintainability.
+## Features
 
-### Setup
+- User registration & login
+- Admin dashboard
+- Product catalog with filtering
+- Shopping cart and checkout
+- Order tracking & history
+- Mobile-friendly responsive design
 
-To run the Brand Shop locally, make sure you have:
+## Setup
 
-- Apache 2.4 or higher
-- PHP 8.0 or higher
-- MySQL 8.0 or higher
-- Composer (for dependency management)
+### Prerequisites
 
-1. Clone the repository to your local machine:
+- PHP 8.0+
+- Apache 2.4+
+- MySQL 8.0+
+- Composer
 
-```bash
-  git clone <repository-url>
-```
+### Steps
 
-2. Start your local web server (e.g., MAMP or XAMPP).
-3. Create a new database in your MySQL server for the project.
-4. Import the database from the data-dump.sql file in the project's root/data directory. You can do this by running the following command from the project directory:
+1. Clone the repository:
 
-```bash
-   mysql -u root -p database_name < data-dump.sql
-```
+   ```bash
+   git clone <repository-url>
+   cd brand-shop
+   ```
 
-Replace `database_name` with the name of the database you created in step 3. You will be prompted to enter your MySQL password.
+2. Install PHP dependencies via Composer:
 
-5. Configure the database connection settings in the config.php file located in the app directory. Replace the DB_HOST, DB_NAME, DB_USER, and DB_PASS values with your MySQL server details.
+   ```bash
+   composer install
+   ```
 
-```php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'database_name');
-define('DB_USER', 'mysql_username');
-define('DB_PASS', 'mysql_password');
-```
+3. Create a new MySQL database:
 
-6. Start your local web server and open the project in your web browser.
+   ```bash
+   mysql -u your_username -p
+   CREATE DATABASE brand_shop CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+   exit
+   ```
 
-   If you placed the project in a subfolder (e.g., `htdocs/brand-shop/`), navigate to:
+4. Import the SQL dump:
 
+   ```bash
+   mysql -u your_username -p brand_shop < data/brand_shop.sql
+   ```
+
+5. Update `config.php` with your database credentials:
+
+   ```php
+   define('DB_HOST', 'localhost');
+   define('DB_NAME', 'brand_shop');
+   define('DB_USER', 'your_user');
+   define('DB_PASS', 'your_password');
+   ```
+
+6. Make sure Apache is running and the project is placed in your local server's root directory  
+   (e.g., `htdocs` for XAMPP/MAMP or `/var/www/html` for system-wide Apache).
+
+7. Visit the app in your browser:
+
+   ```
    http://localhost/brand-shop/
+   ```
 
-   Adjust the URL depending on your local server setup or custom virtual host configuration.
+## Demo Credentials
 
-### Testing
+Use these credentials to explore the app:
 
-This project uses [PHPUnit](https://phpunit.de/) for automated testing.  
-Tests are located in the `/tests` directory and can be run via Composer.
+- **User:** `user@email.com` / `r3YiHfjkniqMfTX`
+- **Admin:** `admin@admin.com` / `dVYTRrT7tnkp8BP`
 
-To run the tests:
+## Testing
+
+This project uses [PHPUnit](https://phpunit.de/) for backend testing.
+
+Run tests via Composer:
 
 ```bash
-composer install     # install dev dependencies, including PHPUnit
-composer test        # run all tests with testdox output and color
+composer install
+composer test
 ```
 
-The script is defined in `composer.json` and uses the `--testdox` and `--colors` options for readable and colorized output.
+## Design
 
-### Features
+You can explore system structure and visual designs in the [project wiki](https://github.com/alexelkinx/brand-shop/wiki).
 
-- **User authentication**: users can sign up, log in (username: `user@email.com` password: `r3YiHfjkniqMfTX`), and log out of the platform.
-- **Product catalog**: users can browse the catalog of clothing items and accessories, view product details, and add items to their cart.
-- **Shopping cart**: users can view their cart, modify the quantity of items, and remove items from the cart.
-- **Checkout process**: users can proceed to checkout, enter their shipping and payment information, and place their order.
-- **Order history**: users can view their order history and track the status of their orders.
-- **Admin panel**: administrators can log in (username: `admin@admin.com` password: `dVYTRrT7tnkp8BP`) and access the admin panel, where they can manage the product catalog, orders, and users.
+### Highlights
 
-### Wiki
+- **System Architecture** – Overview of backend components
+- **Sitemap** – Navigation flow of the website
+- **ERD** – Entity relationship diagram for the database
+- **UI Layouts** – Page mockups (desktop & mobile)
 
-More information about the project, including its architecture, ER diagram, sitemap, and webpage layouts: [wiki](https://github.com/alexelkinx/brand-shop/wiki)
+<h4 align="center">Homepage Preview</h4>
+
+<p align="center">
+  <img src="design/home.png" alt="Homepage preview" />
+  <br />
+  <em>Homepage design (see Wiki for more)</em>
+</p>
+
+For raw images and layouts, you can also explore the [design/](design/) folder.
