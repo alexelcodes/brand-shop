@@ -10,7 +10,9 @@
     <a href="https://jestjs.io/"><img src="https://img.shields.io/badge/Testing-PHPUnit-yellow?logo=testinglibrary" alt="PHPUnit Badge"></a>
   </p>
 
-  <img src="public/img/favicon/apple-touch-icon.png" alt="Brand Shop logo" height="160">
+  <a href="https://brandshop.fun">
+    <img src="public/img/favicon/apple-touch-icon.png" alt="Brand Shop logo" height="160">
+  </a>
 
   <p>
     A full-stack eCommerce platform built as a study project during an internship at Taitotalo.
