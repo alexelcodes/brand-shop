@@ -7,9 +7,9 @@ define('MODELS_DIR', ROOT . '/models/');
 define('LAYOUTS_DIR', 'layouts/');
 
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'online_shop');
+define('DB_NAME', 'brand_shop');
 define('DB_USER', 'admin');
-define('DB_PASS', 'asennus');
+define('DB_PASS', 'changeme');
 
 include ROOT . '/src/autoloader.php';
 include ROOT . '/src/render.php';
