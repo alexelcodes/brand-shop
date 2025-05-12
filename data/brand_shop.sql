@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.32, for macos13.0 (arm64)
 --
--- Host: localhost    Database: online_shop
+-- Host: localhost    Database: brand_shop
 -- ------------------------------------------------------
 -- Server version	8.0.32
 
