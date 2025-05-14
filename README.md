@@ -131,7 +131,7 @@ composer test
 
 ## Design
 
-You can explore system structure and visual designs in the [project wiki](https://github.com/alexelkinx/brand-shop/wiki).
+You can explore system structure and visual designs in the [project wiki](https://github.com/alexeldev/brand-shop/wiki).
 
 ### Highlights
 
